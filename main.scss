@@ -11,15 +11,22 @@ li {
     font-family: sans-serif;
     color:#1F2228;
     cursor: pointer;
+    font-size: 1.2rem;
     
 }
 a {
     text-decoration: none;
  
 }
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+
 .wrapper {
     background-color: #F0F1F3;
-    padding: 30px 90px;
+    padding: 1.7rem 11rem;
    
     
 }
@@ -56,7 +63,7 @@ header{
     }
 
     .header_logo_title {
-        font-size: 20px;
+        font-size: 1.6rem;
         font-family: 'Poppins', sans-serif;        
         line-height: 32px;
         font-weight: 600;
@@ -77,7 +84,7 @@ header{
     
 }
 
-@media screen and (max-width:768px)  {
+@media screen and (max-width:992px)  {
     
     header {
         .navbar, .header_buttons {
@@ -95,24 +102,26 @@ header{
 
 
  main {
-    color: red;
+    background-color: rgb(221, 15, 15);
     background: rgb(34, 26, 26);
     height: 30rem;
  
   
   .content{
-  width: 100%;
-  height: 480px;
-  background: #00000033;
+  max-width: 100%;
+  height: 30rem;
+  background: #e0dbdb;
   text-align: center;
-background-image: url(Rectangle\ 8.png);
-background-size: cover;
+  background-image: url(Rectangle\ 8.png);
+  background-size: cover;
+  background-position: center;
+
 
   &_box{
     width: 600px;
-    height: 256px;
+    height: 16rem; ;
     padding:8rem ;
-    left: 469px;
+    left:29.3rem ;
     margin: auto;
     
 h1,h2 {
@@ -140,30 +149,349 @@ h1,h2 {
 
   }
 }
- section {
-    width: 100%;
-    height: 400px;
-    left: 108px;
-    border: 10px solid red;
-    padding: 80px 60px;
+
+
+
+
+
+
+
+
+.categories {
+    padding: 6rem 10rem;
+  
+
+    &_container {
+      max-width: 100%;
+        height: 30rem;
+        // background: red;
+  
+
+
+
+        &_heading {
+            font-size: 1.1rem;
+            font-family: 'Poppins', sans-serif;        
+            line-height: 3rem;
+            font-weight: 500;
+            color:  #292D35;
+            cursor: pointer;
+    
+        }
+
+
+    }
+
+   
+    &_container_images {
+        width:100%;
+        flex-wrap: wrap;
+        @include d-flex(flex,space-between,center,1.5rem);
+        padding: 1px;
+     
+     
+        
+      
+        &_image {
+            width: 23rem;
+            height: min-content; 
+            position: relative;
+            border: 5px red;   
+
+&_text {
+    position: absolute;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    color: #F3F4F4;
+    margin-left: 1rem;
+    width:22.5rem ;
+    bottom: 1.5rem;
+    
+}
+
+i {
+    position: absolute; 
+    bottom: 1rem;
+    font-size: 1.1rem;
+    padding: .5rem;
+    margin-left: 20rem;
+    border-radius: 50%;
+    width: 50px;
+    color: #ffffff;
+ }
+
+        }
+
+    }
+
+}
+@media screen and (max-width:768px) {
+
+    .categories  {
+
+        width: 100%;
+       
+    }
+   
+     .categories_container_images {
+        height: 1rem;
+        gap: 4.1rem;
+     }
+
+
+
+
+
+    .categories_container_images_image {
+        width: 40rem;
+        height: 4rem;
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.text {
+    border: 1px solid red;
+    padding: 6rem 10rem;
+
+    &_item {
+        font-size: 2.2rem;
+        font-family: sans-serif;
+        font-weight: 500;
+        line-height: 3rem;
+        color:#292D35 ;
+
+    }
+
+   &_boxes {
+        width: 100%;
+        height: 60rem;
+        border: 1px solid red;
+        @include d-flex(flex,space-between,center,_);
+    
+      
     
 
-    .boxes {
-        flex-wrap: wrap;
-        @include d-flex(flex,_,center,_);
+    &_box_1 {
+        width: 100%;
+        height: 30rem;
+        border: 5px solid rgb(37, 1, 1);
+
+
+&_medical {
+    width: 32.5rem;
+    height: 30rem;
+    border: 1px solid black;
+    padding: 0 1.5rem;
+
+  &_images {
+    width: 7rem;
+    height: 7rem;
+    border: 3px solid red;
+    margin: auto;
+    margin-top: 5rem;
+    
+ 
+  }
+
+  &_item {
+
+
+
+&_h2 {
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    font-weight: 500;
+    line-height: 2rem;
+    color:#292D35 ;
+   
+    margin-top: 3.2rem;
+    margin-left: 10rem;
+
+}
+
+  }
+
+
+  &_text {
+
+
+    &_p{
+width:30rem ;
+height:4.5rem ;
+font-size: 1rem;
+font-family: sans-serif;
+font-weight: 300;
+line-height: 1.5rem;
+margin-top: 1rem;
+border: 1px solid red;
 
 
     }
 
-    .box_1 {
-   position: relative;
+
+
+
+
+  }
+
+}
+
+
+
     }
-    .box_1_image {
-        position: absolute;
+
+
+    &_box_2 {
+        width: 100%;
+        height: 30rem;
+        border: 5px solid rgb(37, 1, 1);
+
+
+&_medical {
+    width: 32.5rem;
+    height: 30rem;
+    border: 1px solid black;
+    padding: 0 1.5rem;
+
+  &_images {
+    width: 7rem;
+    height: 7rem;
+    border: 3px solid red;
+    margin: auto;
+    margin-top: 5rem;
+    
+ 
+  }
+
+  &_item {
+
+
+
+&_h2 {
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    font-weight: 500;
+    line-height: 2rem;
+    color:#292D35 ;
+   
+    margin-top: 3.2rem;
+    margin-left: 10rem;
+
+}
+
+  }
+
+
+  &_text {
+
+
+    &_p{
+width:30rem ;
+height:4.5rem ;
+font-size: 1rem;
+font-family: sans-serif;
+font-weight: 300;
+line-height: 1.5rem;
+margin-top: 1rem;
+border: 1px solid red;
+
+
     }
 
-    p {
-        position: absolute;
+
+
+
+
+  }
+
+}
+
+
+
+    }
+
+   
+
+    &_box_3 {
+        width: 100%;
+        height: 30rem;
+        border: 5px solid rgb(37, 1, 1);
+
+
+&_medical {
+    width: 32.5rem;
+    height: 30rem;
+    border: 1px solid black;
+    padding: 0 1.5rem;
+
+  &_images {
+    width: 7rem;
+    height: 7rem;
+    border: 3px solid red;
+    margin: auto;
+    margin-top: 5rem;
+    
+ 
+  }
+
+  &_item {
+
+
+
+&_h2 {
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    font-weight: 500;
+    line-height: 2rem;
+    color:#292D35 ;
+   
+    margin-top: 3.2rem;
+    margin-left: 10rem;
+
+}
+
+  }
+
+
+  &_text {
+
+
+    &_p{
+width:30rem ;
+height:4.5rem ;
+font-size: 1rem;
+font-family: sans-serif;
+font-weight: 300;
+line-height: 1.5rem;
+margin-top: 1rem;
+border: 1px solid red;
+
+
+    }
+
+
+
+
+
+  }
+
+}
+
+
+
     }
 
 
@@ -172,13 +500,18 @@ h1,h2 {
 
 
 
+    }
+
+    
+
+
+
+  
+
+}
 
 
 
 
 
-
-
-
-
- }
+    
