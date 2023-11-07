@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -314,6 +315,7 @@ main .content_box .btn {
 }
 .banner_logo_item {
   font-size: 2.1rem;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   line-height: 3.1rem;
   color: #2a5055;
@@ -340,4 +342,36 @@ main .content_box .btn {
   font-weight: 500;
   line-height: 1.8rem;
   color: #4c848c;
+}
+
+.card {
+  padding: 6rem 10rem;
+}
+.card_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+.card_title_logo {
+  width: 45rem;
+  height: 14rem;
+}
+.card_title_logo_item {
+  font-family: "Poppins", sans-serif;
+  color: #292D35;
+  line-height: 3rem;
+}
+.card_title_logo_text {
+  width: 55rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  line-height: 2.1rem;
+  margin-top: 1rem;
+  color: #14161B;
+}
+.card_title_image_img {
+  width: 33rem;
+  height: 23rem;
+  border-radius: 0.2rem;
 }/*# sourceMappingURL=main.css.map */
