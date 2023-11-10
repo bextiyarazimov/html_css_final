@@ -526,3 +526,219 @@ main {
     }
   }
 }
+
+.partners {
+  width: 100%;
+  height: 22rem;
+  padding: 0rem 10rem;
+
+  &_item {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3rem;
+    color: #292d35;
+  }
+
+  .partner {
+    &_title {
+      &_menu {
+        @include d-flex(flex, space-between, center, 1.5rem);
+
+        &_item {
+          padding: 5rem 0rem;
+
+          &_logo_1 {
+            width: 6.6rem;
+            height: 4.3rem;
+          }
+
+          &_logo_2 {
+            width: 8.2rem;
+            height: 3.1rem;
+          }
+
+          &_logo_3 {
+            width: 8.6rem;
+            height: 4.3rem;
+          }
+
+          &_logo_4 {
+            width: 4.3rem;
+            height: 4.3rem;
+          }
+
+          &_logo_5 {
+            width: 4.3rem;
+            height: 4.3rem;
+          }
+
+          &_logo_6 {
+            width: 12.7rem;
+            height: 2.6rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 22rem;
+  padding: 0rem 9rem;
+  background-color: #f0f1f3;
+  border: 1px solid #a3a9b6;
+
+  &_boxes {
+    margin-top: 3rem;
+    height: 20rem;
+
+    @include d-flex(flex, space-between, center, 0.5rem);
+
+    &_box_1 {
+      width: 5rem;
+      height: 15rem;
+
+      &_item {
+        &_h1 {
+          font-family: "Poppins", sans-serif;
+          font-size: 1.5rem;
+          font-weight: 600;
+          line-height: 2.3rem;
+          color: #1d2939;
+        }
+
+        &_p {
+          font-family: "Poppins", sans-serif;
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 1.5rem;
+          color: #1d2939;
+          margin-top: 0.8rem;
+        }
+      }
+    }
+
+    &_box_2 {
+      width: 15rem;
+      height: 15rem;
+
+      &_item {
+        &_h1 {
+          font-family: "Poppins", sans-serif;
+          font-size: 1.5rem;
+          font-weight: 600;
+          line-height: 2.3rem;
+          color: #1d2939;
+        }
+
+        &_p {
+          font-family: "Poppins", sans-serif;
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 1.5rem;
+          color: #1d2939;
+          margin-top: 0.8rem;
+        }
+      }
+    }
+
+    &_box_3 {
+      width: 15rem;
+      height: 15rem;
+
+      &_item {
+        &_h1 {
+          font-family: "Poppins", sans-serif;
+          font-size: 1.5rem;
+          font-weight: 600;
+          line-height: 2.3rem;
+          color: #1d2939;
+        }
+
+        &_p {
+          font-family: "Poppins", sans-serif;
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 1.5rem;
+          color: #1d2939;
+          margin-top: 0.8rem;
+        }
+      }
+    }
+
+    &_email {
+      width: 26rem;
+      height: 3rem;
+      margin-top: 11rem;
+
+      &_1 {
+        width: 17rem;
+        height: 3rem;
+        border: 1px solid #a3a9b6;
+        border-radius: 0.5rem;
+        padding: 0rem.9rem;
+        background-color: #f0f1f3;
+        margin-left: 1rem;
+      }
+
+      &_button {
+        background-color: #fa8f45;
+        color: rgb(251, 251, 253);
+        padding: 0.9rem 0.9rem;
+        border-radius: 8px;
+        font-family: sans-serif;
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+
+.footer_finish {
+  padding: 1rem 9rem;
+  background-color: #f0f1f3;
+
+  &_cards {
+    @include d-flex(flex, space-between, center, 0.5rem);
+
+    &_box {
+      @include d-flex(flex, space-between, center, 0.5rem);
+
+      &_item {
+        font-family: "Poppins", sans-serif;
+        font-size: 0.8rem;
+        font-weight: 400;
+        line-height: 1.2rem;
+        color: #000000;
+      }
+    }
+
+    &_logs {
+      @include d-flex(flex, space-between, center, 1.5rem);
+      cursor: pointer;
+
+      &_icons {
+        &_img_1 {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+
+        &_img_2 {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+
+        &_img_3 {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+
+        &_img_4 {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
+    }
+  }
+}
